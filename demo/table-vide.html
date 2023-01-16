@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Bulma Responsive Tables demo</title>
+
+  <link rel="icon" href="https://static.justboil.me/assets/jblogo-icon-150.png">
+
+  <meta name="description" content="Responsive tables for Bulma CSS Framework">
+
+  <meta property="og:url" content="https://justboil.github.io/bulma-responsive-tables/">
+  <meta property="og:site_name" content="JustBoil.me / Bulma Responsive Tables">
+  <meta property="og:title" content="Bulma Responsive Tables">
+  <meta property="og:description" content="Responsive tables for Bulma CSS Framework">
+  <meta property="og:image" content="https://justboil.me/images/bulma-responsive-tables/repository-preview-hi-res.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1920">
+  <meta property="og:image:height" content="960">
+
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Bulma Responsive Tables">
+  <meta property="twitter:description" content="Responsive tables for Bulma CSS Framework">
+  <meta property="twitter:image:src" content="https://justboil.me/images/bulma-responsive-tables/repository-preview-hi-res.png">
+  <meta property="twitter:image:width" content="1920">
+  <meta property="twitter:image:height" content="960">
+
+  <link rel="stylesheet" href="css/bulma.min.css">
+  <link rel="stylesheet" href="css/main.min.css">
+  <style type="text/css">
+    h1.title, h3.subtitle {
+      text-align: center;
+    }
+    h1.title {
+      font-weight: 900;
+    }
+    .is-main h1.title {
+      font-size: 3rem;
+    }
+    .is-main h3.subtitle {
+      font-size: 2rem;
+    }
+    footer.footer .logo img {
+      max-height: 30px;
+      width: auto;
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar is-light is-spaced" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://justboil.me/bulma-admin-template/">
+        <img src="https://static.justboil.me/assets/logo-black.png" alt="Vue.js Buefy Bulma Admin Templates">
+      </a>
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="https://justboil.github.io/bulma-switch-control/">Bulma Switch</a>
+        <a class="navbar-item" href="https://justboil.github.io/bulma-radio/">Bulma Radio</a>
+        <a class="navbar-item" href="https://justboil.github.io/bulma-checkbox/">Bulma Checkbox</a>
+        <a class="navbar-item is-active" href="https://justboil.github.io/bulma-responsive-tables/">Bulma Tables</a>
+      </div>
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a href="https://github.com/justboil/bulma-responsive-tables" class="button is-small">
+              <span class="icon">
+                <i class="mdi mdi-github-circle"></i>
+              </span>
+              <span>Back to GitHub Repo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<section class="hero is-light is-main">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title has-text-centered">
+        <span class="icon">
+          <i class="mdi mdi-bulma"></i>
+        </span>
+        Bulma responsive tables
+      </h1>
+      <h3 class="subtitle has-text-centered">No JS. CSS/SCSS-only package for Bulma</h3>
+
+      <figure class="image">
+        <img src="demo-preview.png" alt="Bulma responsive tables CSS/SCSS-only">
+      </figure>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="b-table">
+      <div class="table-wrapper has-mobile-cards">
+        <table class="table is-fullwidth is-striped is-hoverable is-fullwidth">
+          <thead>
+          <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Company</th>
+            <th>City</th>
+            <th>Progress</th>
+            <th>Created</th>
+            <th></th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td class="is-image-cell">
+              <div class="image">
+                <img src="https://avatars.dicebear.com/v2/initials/rebecca-bauch.svg" class="is-rounded">
+              </div>
+            </td>
+            <td data-label="Name">Rebecca Bauch</td>
+            <td data-label="Company">Daugherty-Daniel</td>
+            <td data-label="City">South Cory</td>
+            <td data-label="Progress" class="is-progress-cell">
+              <progress max="100" class="progress is-small is-primary" value="79">79</progress>
+            </td>
+            <td data-label="Created">
+              <small class="has-text-grey is-abbr-like" title="Oct 25, 2020">Oct 25, 2020</small>
+            </td>
+            <td class="is-actions-cell">
+              <div class="buttons is-right">
+                <button class="button is-small is-primary" type="button">
+                  <span class="icon"><i class="mdi mdi-eye"></i></span>
+                </button>
+                <button class="button is-small is-danger jb-modal" data-target="sample-modal" type="button">
+                  <span class="icon"><i class="mdi mdi-trash-can"></i></span>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="is-image-cell">
+              <div class="image">
+                <img src="https://avatars.dicebear.com/v2/initials/sienna-hayes.svg" class="is-rounded">
+              </div>
+            </td>
+            <td data-label="Name">Sienna Hayes</td>
+            <td data-label="Company">Conn, Jerde and Douglas</td>
+            <td data-label="City">Jonathanfort</td>
+            <td data-label="Progress" class="is-progress-cell">
+              <progress max="100" class="progress is-small is-primary" value="55">55</progress>
+            </td>
+            <td data-label="Created">
+              <small class="has-text-grey is-abbr-like" title="Mar 7, 2019">Mar 7, 2019</small>
+            </td>
+            <td class="is-actions-cell">
+              <div class="buttons is-right">
+                <button class="button is-small is-primary" type="button">
+                  <span class="icon"><i class="mdi mdi-eye"></i></span>
+                </button>
+                <button class="button is-small is-danger jb-modal" data-target="sample-modal" type="button">
+                  <span class="icon"><i class="mdi mdi-trash-can"></i></span>
+                </button>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="hero is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">Empty table</h1>
+      <h3 class="subtitle">Check desktop & mobile layout</h3>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="b-table">
+      <div class="table-wrapper has-mobile-cards">
+        <table class="table">
+          <thead>
+          <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Company</th>
+            <th>City</th>
+            <th>Progress</th>
+            <th>Created</th>
+            <th></th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr class="is-empty">
+            <td colspan="7">
+              <section class="section">
+                <div class="content has-text-grey has-text-centered">
+                  <p><span class="icon is-large"><i class="mdi mdi-emoticon-sad mdi-48px"></i></span></p>
+                  <p>Nothing's there&hellip;</p>
+                </div>
+              </section>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <div class="logo">
+          <a href="https://justboil.me/bulma-admin-template/">
+            <img src="https://static.justboil.me/assets/logo-black.png" alt="Vue.js Buefy Bulma Admin Templates">
+          </a>
+        </div>
+      </div>
+      <div class="column is-narrow">
+        <div class="buttons">
+          <a href="https://github.com/justboil/bulma-responsive-tables" class="button is-small">
+              <span class="icon">
+                <i class="mdi mdi-github-circle"></i>
+              </span>
+            <span>GitHub Repo</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Icons below are for demo-only. Feel free to use any icon pack. Docs: https://bulma.io/documentation/elements/icon/ -->
+<link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.9.95/css/materialdesignicons.min.css">
+
+<script type="text/javascript">
+  Array.from(document.querySelectorAll('th.is-sortable, button.button')).forEach(function (el) {
+    el.addEventListener('click', function (e) {
+      e.preventDefault();
+      console.log('jfdjf')
+      alert('CSS-only package for Bulma. JS not included.');
+    });
+  })
+</script>
+</body>
+</html>
